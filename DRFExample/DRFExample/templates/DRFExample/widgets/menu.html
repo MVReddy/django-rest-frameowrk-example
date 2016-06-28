@@ -1,0 +1,8 @@
+<ul class="dropdown-menu">
+     <li id="index-tab" class="{% if active_page == 'index' %}active{% endif %}">
+        <a class="k-link" href="{% url 'DRFExample:home' %}">Home</a>
+    </li>
+     <li id="page2-tab" class="{% if active_page == 'page2' %}active{% endif %}">
+        <a class="k-link" href="{% url 'DRFExample:page2' %}">Page 2</a>
+    </li>
+</ul>

@@ -1,0 +1,10 @@
+{% extends 'django_utils/layout.html' %}
+
+{% block custom_menu %}
+
+<li class="dropdown active">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Drfexample <span class="caret"></span></a>
+    {% block menu %}{% endblock menu %}
+</li>
+
+{% endblock custom_menu %}

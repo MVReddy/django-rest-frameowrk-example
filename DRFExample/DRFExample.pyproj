@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>DRFExample</Name>
+    <RootNamespace>DRFExample</RootNamespace>
+    <DjangoSettingsModule>$(MSBuildProjectName)_config.settings</DjangoSettingsModule>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <SearchPath>C:\Dev\Projects\common;N:\IT\env\int-dev\mass\mass_dal\;N:\IT\env\int-dev\mass\mass_common\</SearchPath>
+    <StartupFile>manage.py</StartupFile>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>runserver</CommandLineArguments>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>DRFExample</Name>
+    <RootNamespace>DRFExample</RootNamespace>
+    <DjangoSettingsModule>$(MSBuildProjectName)_config.settings</DjangoSettingsModule>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DRFExample\settings\dev.py" />
+    <Compile Include="DRFExample\settings\local.py" />
+    <Compile Include="DRFExample\settings\prod.py" />
+    <Compile Include="DRFExample\settings\qa.py" />
+    <Compile Include="DRFExample\settings\stg.py" />
+    <Compile Include="DRFExample\settings\__init__.py" />
+    <Compile Include="DRFExample\__init__.py" />
+    <Compile Include="DRFExample\admin.py" />
+    <Compile Include="DRFExample\models.py" />
+    <Compile Include="DRFExample\tests.py" />
+    <Compile Include="DRFExample\urls.py" />
+    <Compile Include="DRFExample\views.py" />
+    <Compile Include="DRFExample\migrations\__init__.py" />
+    <Compile Include="DRFExample_config\__init__.py" />
+    <Compile Include="DRFExample_config\settings.py" />
+    <Compile Include="DRFExample_config\urls.py" />
+    <Compile Include="DRFExample_config\wsgi.py" />
+    <Compile Include="manage.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DRFExample\templates\DRFExample\index.html" />
+    <Content Include="DRFExample\templates\DRFExample\page2.html" />
+    <Content Include="DRFExample\templates\DRFExample\widgets\menu.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DRFExample\" />
+    <Folder Include="DRFExample\migrations\" />
+    <Folder Include="DRFExample\settings\" />
+    <Folder Include="DRFExample\static\" />
+    <Folder Include="DRFExample\static\DRFExample\" />
+    <Folder Include="DRFExample\static\DRFExample\content\" />
+    <Folder Include="DRFExample\static\DRFExample\scripts\" />
+    <Folder Include="DRFExample\templates\" />
+    <Folder Include="DRFExample\templates\DRFExample\" />
+    <Folder Include="DRFExample\templates\DRFExample\widgets\" />
+    <Folder Include="DRFExample_config\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
